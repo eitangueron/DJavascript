@@ -6,12 +6,14 @@ const bodyParser = require(`body-parser`)
 const mongoose = require(`mongoose`)
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/motionDJing-app`)
+
 app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended: true}))
+app.use(bodyParser.urlencoded({
+    extended: true
+}))
 app.use(express.static(path.join(__dirname, `dist`)))
-app.use(express.static(path.join(__dirname, `node_modules`)))
-app.use(express.static(path.join(__dirname, `motion-controller`)))
+app.use(express.static(path.join(__dirname, 'node_modules')))
 app.use(`/`, api)
 
-const PORT = 2999;
+const PORT = 3000;
 app.listen(process.env.PORT || PORT, () => console.log(`Server is running on port ${PORT}`));
