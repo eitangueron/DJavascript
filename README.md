@@ -5,7 +5,7 @@ djs is my first hackathon project. It was an intense and enjoyable 36 hours hack
 The app requests access to your computers camara and detects users motion in boxs desplayed on the screen - each box outputs a different sound - and in that way you can create your own track! Kids loveeeee it haha.
 
 
-Demo: djavascript.herokuapp.com
+Demo: https://djavascript.herokuapp.com/
 
 ## Table Of Contents
 - [DJavascript](#DJavascript)
